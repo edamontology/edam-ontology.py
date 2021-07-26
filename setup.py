@@ -14,7 +14,7 @@ if sys.version_info < (3, 5):
     sys.stderr.write("ERROR: edam-data requires at least Python Version 3.5\n")
     sys.exit(1)
 
-SOURCE_DIR = "edam_data"
+SOURCE_DIR = "edam_ontology"
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
@@ -36,14 +36,14 @@ with open('%s/__init__.py' % SOURCE_DIR, 'rb') as f:
 TEST_DIR = 'tests'
 PROJECT_DESCRIPTION = 'Versioned, Python packaged EDAM ontology (http://edamontology.org/) data.'
 PACKAGES = [
-    'edam_data',
+    'edam_ontology',
 ]
 ENTRY_POINTS = '''
     [console_scripts]
 '''
 PACKAGE_DATA = {
-    'edam_data': [
-        'xml/xsd/repository_dependencies.xsd',
+    'edam_ontology': [
+        '**',
     ],
 }
 PACKAGE_DIR = {
@@ -84,7 +84,7 @@ setup(
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
-    keywords='planemo',
+    keywords='EDAM',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -96,6 +96,7 @@ setup(
         'Topic :: Software Development :: Testing',
         'Natural Language :: English',
         "Programming Language :: Python :: 3",
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',

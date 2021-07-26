@@ -1,2 +1,2 @@
 include *.rst LICENSE *.txt
-include edam_data/*
+include edam_ontology/*

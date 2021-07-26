@@ -8,4 +8,4 @@ from typing import TextIO
 
 def tabular_stream() -> TextIO:
     """Yield EDAM data in TSV format as a Python UTF-8 encoded text stream."""
-    return open_text("edam_data", 'EDAM.tsv')
+    return open_text("edam_ontology", 'EDAM.tsv')

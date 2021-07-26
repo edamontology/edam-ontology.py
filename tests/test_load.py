@@ -1,5 +1,5 @@
 """Test file loading of eda_data.streams package."""
-from edam_data.streams import tabular_stream
+from edam_ontology.streams import tabular_stream
 
 
 def test_tabular_stream():
