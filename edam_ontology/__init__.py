@@ -2,7 +2,7 @@
 """EDAM data packaged as a Python module."""
 
 # EDAMmajorversion.EDMAminorversion.pythonprojectdotversion
-__version__ = '1.25.2'
+__version__ = '1.25.3.dev0'
 
 
 PROJECT_NAME = "edam-ontology"
