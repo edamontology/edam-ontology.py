@@ -6,7 +6,7 @@ __version__ = '1.25.3.dev0'
 
 
 PROJECT_NAME = "edam-ontology"
-GITHUB_PROJECT_NAME =  "edam-ontology.py"
+GITHUB_PROJECT_NAME = "edam-ontology.py"
 PROJECT_OWNER = PROJECT_USERAME = "edamontology"
 PROJECT_AUTHOR = 'edamontology'
 PROJECT_EMAIL = 'jmchilton@gmail.com'
