@@ -6,10 +6,10 @@ History
 .. to_doc
 
 ---------------------
-1.26.0.dev0
+1.25.1.dev0
 ---------------------
 
-    
+* Attempt to fix automated publishing to PyPI.
 
 ---------------------
 1.25.0 (2021-08-02)
