@@ -96,12 +96,13 @@ setup(
         'Topic :: Software Development :: Testing',
         'Natural Language :: English',
         "Programming Language :: Python :: 3",
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
+    python_requires=">=3.9",
     test_suite=TEST_DIR,
     tests_require=test_requirements
 )

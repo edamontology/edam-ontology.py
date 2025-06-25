@@ -2,12 +2,11 @@
 
 Keep parsing and such to minimum to maintain maximum backward compatibility.
 """
-from io import TextIOWrapper
-from typing import TextIO
-
-from pkg_resources import resource_stream
+import importlib.resources
+from typing import IO
 
 
-def tabular_stream() -> TextIO:
+def tabular_stream() -> IO[str]:
     """Yield EDAM data in TSV format as a Python UTF-8 encoded text stream."""
-    return TextIOWrapper(resource_stream("edam_ontology", 'EDAM.tsv'), encoding='utf-8')
+    ref = importlib.resources.files("edam_ontology").joinpath("EDAM.tsv")
+    return ref.open()
