@@ -39,11 +39,11 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 
 install: ## install into Python envirnoment
-	python setup.py install
+	pip install .
 
 setup-venv: ## setup a development virtualenv in current directory
 	if [ ! -d $(VENV) ]; then virtualenv $(VENV); exit; fi;
-	$(IN_VENV) pip install --upgrade pip && pip install -r dev-requirements.txt -r requirements.txt
+	$(IN_VENV) pip install --upgrade pip && pip install -r dev-requirements.txt
 
 lint: ## check style using tox and flake8
 	$(IN_VENV) tox -e lint
@@ -59,7 +59,7 @@ open-project: ## open project on github
 	$(OPEN_RESOURCE) $(PROJECT_URL)
 
 dist: clean ## create and check packages
-	$(IN_VENV) python setup.py sdist bdist_wheel
+	$(IN_VENV) python -m build
 	$(IN_VENV) twine check dist/*
 	ls -l dist
 
