@@ -3,5 +3,5 @@ tox
 pytest
 
 # For release
-wheel
+build
 twine
