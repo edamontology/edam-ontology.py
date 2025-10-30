@@ -39,6 +39,10 @@ dependencies = [
 Homepage = "https://github.com/edamontology/edam-ontology.py"
 Repository = "https://github.com/edamontology/edam-ontology.py"
 
+[tool.black]
+line-length = 120
+target-version = ['py39']
+
 [tool.setuptools]
 packages = ["edam_ontology"]
 
