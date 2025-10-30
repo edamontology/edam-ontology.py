@@ -6,10 +6,13 @@ History
 .. to_doc
 
 ---------------------
-1.25.3.dev0
+1.25.3 (2025-10-30)
 ---------------------
 
-    
+* Drop support for Python 3.5-3.8 .
+* Add support for Python 3.10-3.14 .
+* Replace deprecated ``pkg_resources.resource_stream()`` with ``importlib.resources.files()`` .
+* Migrate from ``setup.py`` to ``pyproject.toml`` .
 
 ---------------------
 1.25.2 (2021-08-03)

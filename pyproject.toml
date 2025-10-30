@@ -27,6 +27,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development",
     "Topic :: Software Development :: Code Generators",
     "Topic :: Software Development :: Testing",
@@ -37,6 +38,10 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/edamontology/edam-ontology.py"
 Repository = "https://github.com/edamontology/edam-ontology.py"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
 
 [tool.setuptools]
 packages = ["edam_ontology"]

@@ -1,5 +1,5 @@
 # Default environment for make tox
-ENV?=py27
+ENV?=lint,mypy,unit
 # Extra arguments supplied to tox command
 ARGS?=
 # Open resource on Mac OS X or Linux
@@ -10,7 +10,7 @@ VENV?=.venv
 UPSTREAM?=edamontology
 SOURCE_DIR?=edam_ontology
 BUILD_SCRIPTS_DIR=scripts
-VERSION?=$(shell python $(BUILD_SCRIPTS_DIR)/print_version_for_release.py $(SOURCE_DIR))
+VERSION?=$(shell python3 $(BUILD_SCRIPTS_DIR)/print_version_for_release.py $(SOURCE_DIR))
 PROJECT_URL?=https://github.com/edamontology/edam-ontology.py
 PROJECT_NAME?=edam_ontology
 TEST_DIR?=tests
@@ -52,7 +52,7 @@ lint: ## check style using tox and flake8
 test: ## run tests with the default Python (faster than tox)
 	$(IN_VENV) tox -e unit
 
-tox: ## run tests with tox in the specified ENV, defaults to py27
+tox: ## run tests with tox on the target environments specified by ENV
 	$(IN_VENV) tox -e $(ENV) -- $(ARGS)
 
 open-project: ## open project on github
