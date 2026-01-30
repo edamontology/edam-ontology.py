@@ -2,6 +2,7 @@
 
 Keep parsing and such to minimum to maintain maximum backward compatibility.
 """
+
 import importlib.resources
 from typing import IO
 

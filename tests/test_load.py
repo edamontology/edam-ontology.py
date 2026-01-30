@@ -1,4 +1,5 @@
 """Test file loading of eda_data.streams package."""
+
 from edam_ontology.streams import tabular_stream
 
 
@@ -7,8 +8,8 @@ def test_tabular_stream():
     term_count = 0
     with tabular_stream() as handle:
         for line in handle.readlines():
-            fields = line.split('\t')
-            if not fields[0].startswith('http://edamontology.org/'):
+            fields = line.split("\t")
+            if not fields[0].startswith("http://edamontology.org/"):
                 continue
             term_count += 1
 
