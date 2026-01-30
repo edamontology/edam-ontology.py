@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Versioned, Python packaged EDAM ontology (http://edamontology.org/) data."
 readme = "README.rst"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     { name = "John Chilton", email = "jmchilton@gmail.com" },
 ]
@@ -22,7 +22,6 @@ classifiers = [
     "Natural Language :: English",
     "Operating System :: POSIX",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -41,7 +40,6 @@ Repository = "https://github.com/edamontology/edam-ontology.py"
 
 [tool.black]
 line-length = 120
-target-version = ['py39']
 
 [tool.setuptools]
 packages = ["edam_ontology"]
